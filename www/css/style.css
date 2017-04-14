@@ -1,0 +1,29 @@
+/* Empty. Add your own CSS if you like */
+.btn {
+  display:block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid black;
+
+}
+
+/*.header-badge{*/
+  /*top: 20px;*/
+  /*bottom: -15px;*/
+/*}*/
+
+.badge-container{
+  position: relative;
+}
+
+.images-parent{
+  text-align: center;
+}
+
+
+.center-image{
+  margin:0 auto;
+  max-width: 400px !important;
+  max-height: 400px !important;
+}
