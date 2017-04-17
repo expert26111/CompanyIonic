@@ -1,17 +1,30 @@
-
-
-
 <ion-view view-title="Bell's Page">
-  <ion-content class="padding">
+  <ion-content class="padding" scroll="false">
 
-      <ion-list >
-        <ion-item
-                  ng-repeat="item in artists" class="item-thumbnail-left item-icon-only ">
-          <div  class="images-parent">
-        <a> <img ng-src="js/img/{{item.shortname}}_tn.jpg" alt="{{item.name}} Photo" class="center-image"></a>
-          </div>
-        </ion-item>
-      </ion-list>
+    <div class="card-wrapper">
+      <div class="card custom-card">
+        <ion-scroll class="scroll-view">
+
+          <ion-list>
+            <ion-card ng-repeat="item in artists" class="item-thumbnail-left item-icon-only ">
+              <ion-item class="padding">
+
+                <div class="images-parent card full-card">
+                  <img class="button"  on-touch="onTouch()" ng-src="js/img/{{item.shortname}}_tn.jpg"
+                       alt="{{item.name}} Photo"
+                       class="center-image">
+                  <!--<button class="button button-full button-positive " ng-click="getPhoto">Take Image</button>-->
+                </div>
+              </ion-item>
+            </ion-card>
+          </ion-list>
+
+          <ion-scroll>
+
+            <div>
+            </div>
 
   </ion-content>
+
+
 </ion-view>
